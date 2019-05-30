@@ -1,0 +1,12 @@
+<h3>User</h3>
+
+<button (click)= "changeButton()">Login</button>
+<button (click) = "loglogin()">Console</button>
+
+<div *ngIf = "isLogin"> 
+  <ul>
+    <li *ngFor = "let user of users">
+      {{user.name}} - {{user.email}}
+    </li>
+  </ul>
+</div>
