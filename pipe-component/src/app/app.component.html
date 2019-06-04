@@ -1,0 +1,9 @@
+ {{title}}  <button (click)="reset()">Reset</button><br><br>
+
+ {{str | defaultpipe}} <br><br>
+
+ <form>
+     <input type="text" name="name" [(ngModel)]="unicorns.name">
+     <input type="text" name="color" [(ngModel)]="unicorns.color"> 
+     <button (click)="sendUnicorn()">Send</button>
+ </form>
