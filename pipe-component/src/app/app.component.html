@@ -7,3 +7,11 @@
      <input type="text" name="color" [(ngModel)]="unicorns.color"> 
      <button (click)="sendUnicorn()">Send</button>
  </form>
+
+ <div *ngIf="arr">
+     <ul>
+         <li *ngFor="let item of arr">
+             Name: {{item.name}} - Color: {{item.color}}
+         </li>
+     </ul>
+ </div>
